@@ -1,0 +1,74 @@
+*{
+margin: 0;
+padding: 0;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; 
+    aise bhi krke card ko center me la skte h
+    */
+
+}
+.cards{ 
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+  
+   /* this is also new method jisse ham card ko centre per la skte h */
+width: 230px;
+height: 300px;
+border: 1px solid salmon;
+border-radius: 20px;
+overflow: hidden;
+}
+#card1{
+    transform: translate(-50%,-50%);
+z-index:4;
+
+}
+#card2{
+    z-index: 3;
+ transform: translate(-50%,-50%);rotate: -7deg;
+
+}
+#card3{
+    z-index: 2;
+transform: translate(-50%,-50%);rotate: -14deg;
+
+
+}
+#card4{
+    z-index: 1;
+transform: translate(-50%,-50%);rotate: -21deg;
+
+}
+img{
+width: 100%;
+height:100%;
+object-fit: cover;
+}#card2:hover{
+    z-index: 10;
+}
+#card3:hover{
+    z-index: 10;
+}
+#card4:hover{
+    z-index: 10;
+}
+h1{
+ font-weight: bold;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ translate: 50;
+ margin:auto
+ margin left: 20;
+}
